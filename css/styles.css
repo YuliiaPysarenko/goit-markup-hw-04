@@ -140,6 +140,8 @@ header {
 /* hero section */
 
 .hero {
+    margin: 0 auto;
+    padding: 200px 0;
     max-width: 1600px;
     background-color: var(--dark-background);
     background-image: linear-gradient(
@@ -149,11 +151,6 @@ header {
     ), url(../images/background-image.jpg);
     background-size: cover;
     background-position: center;
-}
-
-.hero-container {
-    margin: 0 auto;
-    padding: 200px 0;
 }
 
 .hero-title {
@@ -239,7 +236,9 @@ header {
 }
 
 .list-item-logo {
-    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
     margin-bottom: 30px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -308,7 +307,7 @@ header {
 }
 
 .team-text {
-    padding: 30px 0 16px;
+    padding: 30px 0;
 }
 
 .team-member {
@@ -321,6 +320,7 @@ header {
 }
 
 .member-profession {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -329,8 +329,7 @@ header {
 
 .social-links {
     display: flex;
-    margin: 0;
-    padding: 0 32px;
+    justify-content: center;
 }
 
 .social-link-item:not(:last-child) {
@@ -342,7 +341,6 @@ header {
     color: var(--section-text);
     text-decoration: none;
     padding: 0;
-    margin-bottom: 30px;
 }
 
 .social-link:hover .icon,
@@ -355,10 +353,6 @@ header {
     background-color: var(--brand-color);
     border-radius: 50%;
 }
-
-/* .social-link:focus {
-    fill: currentColor;
-} */
 
 .social-link {
     padding: 12px;
@@ -385,9 +379,7 @@ header {
     height: 92px;
     padding: 16px 32px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
 
     border: 1px solid var(--logo-icon-partners);
     box-sizing: border-box;
@@ -426,6 +418,7 @@ footer .logo {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .address {
@@ -459,17 +452,12 @@ footer .logo {
 }
 
 .join-social-links {
-    margin-top: 12px;
     margin-left: 70px;
 }
 
 .footer .benefit-item {
     color: var(--main-text);
     margin-bottom: 20px;
-}
-
-.footer .social-links {
-    padding: 0;
 }
 
 .footer .social-link {
